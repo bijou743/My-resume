@@ -30,6 +30,7 @@ h1 {
 	text-transform: uppercase;
 	font-size: 50px;
 	line-height: 58px;
+	margin-bottom: 10px;
 }
 
 a {
@@ -115,11 +116,10 @@ hr {
 }
 
 .left-content .subtitle {
-	text-transform: lowercase;
+	/* text-transform: lowercase; */
 	color: var(--stroke);
-	margin-top: 10px;
-	margin-bottom: 80px;
 	font-size: 16px;
+	margin-bottom: 5px;
 }
 
 .left-content__block {
@@ -176,8 +176,15 @@ hr {
 
 .tools {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-	gap: 20px 10px;
+	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+	gap: 40px 30px;
+}
+
+.tools div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px 0;
 }
 
 .tools img {
@@ -224,5 +231,10 @@ hr {
 @media (max-width: 560px) {
 	.left-content {
 		justify-content: start;
+		gap: 0;
+	}
+
+	.left-content__block {
+		margin-bottom: 40px;
 	}
 }
